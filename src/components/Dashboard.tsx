@@ -4,7 +4,7 @@ import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
 import ListSubheader from "@material-ui/core/ListSubheader";
-
+import Contributors from "./contributors.json";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -24,16 +24,8 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-const tileData = [
-  {
-    img: "/contributors/mukarramali.jpg",
-    title: "Image",
-    author: "author",
-  },
-];
 export default function Dashboard() {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <GridList cellHeight={180} className={classes.gridList}>
@@ -42,12 +34,15 @@ export default function Dashboard() {
             HacktoberFest India 2020
           </ListSubheader>
         </GridListTile>
-        {tileData.map((tile) => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+        {Contributors.map((contributor) => (
+          <GridListTile key={contributor.github}>
+            <img
+              src={`/contributors/${contributor.avatar}`}
+              alt={contributor.name}
+            />
             <GridListTileBar
-              title={tile.title}
-              subtitle={<span>by: {tile.author}</span>}
+              title={contributor.name}
+              subtitle={contributor.college}
             />
           </GridListTile>
         ))}
