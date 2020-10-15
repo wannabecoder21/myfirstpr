@@ -33,11 +33,18 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+const openGithubProfile = (username: string) => {
+  window.open(`https://github.com/${username}`, "_blank");
+};
+
 export default function ContributorCard(props: Contributor) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.cardRoot}>
+    <Card
+      className={classes.cardRoot}
+      onClick={() => openGithubProfile(props.github)}
+    >
       <div className={classes.cardDetails}>
         <CardContent className={classes.cardContent}>
           <Typography component="h5" variant="h5">
