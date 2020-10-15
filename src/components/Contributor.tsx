@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
+const NAMESPACE = "/myfirstpr";
 
 interface Contributor {
   avatar?: string;
@@ -69,7 +70,7 @@ export default function ContributorCard(props: Contributor) {
       </div>
       <CardMedia
         className={classes.cardCover}
-        image={`/contributors/${props.avatar || "default.png"}`}
+        image={`${NAMESPACE}/contributors/${props.avatar || "default.png"}`}
         title={props.name}
       />
     </Card>
