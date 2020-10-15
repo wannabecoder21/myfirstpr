@@ -4,7 +4,23 @@
     "name": "Mukarram Ali",
     "organization": "SchmiedeONE",
     "college": "B.T. Kumaon Institute of Technology",
-    "hometown": "Haldwani",
-    "avatar": "mukarramali.jpg"
+    "city": "Dusseldorf",
+    "avatar": "mukarramali.jpg",
+    "quote": "Be water"
+  },
+  {
+    "github": "gothicprakhar",
+    "name": "Prakhar Agrawal",
+    "organization": "Kilobyte Tech",
+    "college": "B.T. Kumaon Institute of Technology",
+    "city": "Delhi",
+    "quote": "Be water"
+  },
+  {
+    "github": "Yathartha22",
+    "name": "Yathartha Joshi",
+    "college": "B.T. Kumaon Institute of Technology",
+    "city": "Delhi",
+    "quote": "Be water"
   }
 ]
