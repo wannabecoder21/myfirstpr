@@ -1,0 +1,14 @@
+name: DeployGithubPages
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy to github pages
+        run: |
+          yarn
+          yarn deploy
