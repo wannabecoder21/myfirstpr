@@ -13,6 +13,7 @@
     "name": "Prakhar Agrawal",
     "organization": "Kilobyte Tech",
     "college": "B.T. Kumaon Institute of Technology",
+    "avatar": "prakharagrawal.jpeg",
     "city": "Delhi",
     "quote": "Be water"
   },
@@ -20,7 +21,17 @@
     "github": "Yathartha22",
     "name": "Yathartha Joshi",
     "college": "B.T. Kumaon Institute of Technology",
+    "avatar": "yathartha.jpeg",
     "city": "Delhi",
     "quote": "Be water"
+  },
+  {
+    "github": "rukshanuddin",
+    "name": "Rukshan Uddin",
+    "organization": "Trilogy Education",
+    "college": "Flatiron School",
+    "avatar": "rukshanuddin.JPG",
+    "city": "Palm Beach Gardens",
+    "quote": "Change things"
   }
 ]
